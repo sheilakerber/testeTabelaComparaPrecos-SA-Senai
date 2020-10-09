@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <title>Criar Lista</title>
+        <script src="produtos.js"></script>
+    </head>
+    <body onload="gerarListaProdutos()">
+        <h3>
+            <a href="https://www.google.com">Inserir produto</a>
+        </h3>
+
+        <form action="">
+            <input id="produtoSelecionado" list="listaProdutos">
+            <datalist id="listaProdutos"></datalist>
+        </form>
+
+        <p id="produtosInseridosUsuario">Sua lista irá aparecer aqui:</p>
+
+        <!-- <table id="tabelaListaProdutos"> <tr> <th id="nomeProduto">Produto</th> </tr> <tr> <td> <input list="listaProdutos" name="listaProdutos" placeholder="Selecione aqui"/> <datalist id="listaProdutos"></datalist> </td> </tr> </table> -->
+
+        <button id="botaoAddNovoItem" onclick="addItemLista()">Add à lista</button>
+        <button onclick="finalizarLista()">Finalizar lista</button><br>
+
+        <table></table>
+
+        <p id="testeLista"></p>
+
+    </body>
+
+    <script src="criarLista.js"></script>
+
+</html>

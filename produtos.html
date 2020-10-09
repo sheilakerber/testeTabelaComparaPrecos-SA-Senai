@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inserir Produto</title>
+    </head>
+    <body onload="gerarBairros(), gerarTiposProdutos()">
+
+        <!-- <label>Produto: <input list="produtos" name="produto" id="produtoInserido" placeholder="Selecione o produto"> <datalist id="produtoInserido"></datalist> </label><br> -->
+
+        <form action="">
+
+            <label>Produto:
+                <input list="tipoProdutoInserido" name="tiposProdutos" id="tipoProduto" placeholder="Selecione o produto" required="required">
+                <datalist id="tipoProdutoInserido"></datalist>
+            </label><br>
+
+            <label>Marca:
+                <input list="marcaProduto" name="marcaProduto" id="marcaProdutoInserido" placeholder="Marca do produto" required="required">
+                <datalist id="marcaProdutoInserido"></datalist>
+            </label><br>
+
+            <label>Volume/peso:
+                <input list="volumePesoProduto" name="volumePesoProduto" id="volumePesoProdutoInserido" placeholder="Ex: 1L, 500g, 1Kg" required="required">
+                <datalist id="volumePesoProdutoInserido"></datalist>
+            </label><br>
+
+            <label>Data da compra:
+                <input id="dataCompra" type="date" required="required">
+            </label><br>
+
+            <label>Estabelecimento:
+                <input list="estabelecimentos" name="estabelecimento" id="estabelecimentoProduto" placeholder="Local da compra">
+                <datalist id="estabelecimentos">
+                    <option value="Angeloni Capoeiras">
+                        <option value="Angeloni Beira Mar">
+                            <option value="Angeloni Santa Mônica">
+                                <option value="Imperatriz Córrego Grande">
+                                    <option value="Big (Shopping Iguatemi)">
+                                        <option value="Supermercados Rosa (Itacorubi)"></datalist>
+                                    </label><br>
+
+                                    <label>Bairro:
+                                        <input list="bairros" id="bairroProduto" name="bairro" placeholder="Selecione seu bairro" required="required">
+                                        <datalist id="bairros"></datalist>
+                                    </label><br>
+
+                                    <label>Valor unitário:
+                                        <input id="valorProduto" type="number" required="required" placeholder="Ex: 2.50">
+                                    </label><br>
+
+                                </form>
+
+                                <button onclick="voltar()">Voltar</button>
+                                <button onclick="inserirProduto()">Inserir Produto</button>
+
+                            </body>
+                            <script src="usuario.js"></script>
+                            <script src="produtos.js"></script>
+                            <script src="bairros.js"></script>
+                            <script src="estabelecimentos.js"></script>
+                        </html>
